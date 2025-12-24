@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>jeng</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <style>
     * {
@@ -77,6 +77,21 @@ body {
     margin-right: 15px;
     justify-content: center; 
 }
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;       
+        min-height: auto; 
+        padding: 20px;
+    }
+
+    .main-content {
+        padding: 20px;  /
+    }
+}
 
 </style>
 </head>
@@ -120,3 +135,4 @@ body {
 
 </body>
 </html>
+
